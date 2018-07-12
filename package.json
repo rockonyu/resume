@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/app.ts",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && node build/app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,12 +19,15 @@
   },
   "homepage": "https://github.com/rockonyu/resume#readme",
   "devDependencies": {
+    "@types/node": "^10.5.2",
     "awesome-typescript-loader": "^5.2.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "style-loader": "^0.21.0",
     "typescript": "^2.9.2",
     "webpack": "^4.16.0",
     "webpack-cli": "^3.0.8"
