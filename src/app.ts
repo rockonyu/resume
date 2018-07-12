@@ -1,71 +1,70 @@
-const resume = require('./resume.json');
+import * as result from './resume.json';
+const resume = (result as any);
 
-const header = `
-  <div class="header">
-    <p>THE PROGRAMER</p>
-    <h1>${resume.basics.name}</h1>
-    <h3>
-    <span>${resume.basics.label}</span>
-    </h3>
-  </div>
-`;
+import Header from './shared/Header';
 
-const aside = `
-  <div class="aside">
-    <div class="container">
-      <h3 class="title">CONTACT</h3>
-      <ul>
-        <li>
-          <span class="label">Name</span>
-          <span>
-            ${resume.basics.name + ' ' + resume.basics.enname}
-          </span>
-        </li>
-        <li>
-          <span class="label">Mobile</span>
-          <span>
-            ${resume.basics.phone}
-          </span>
-        </li>
-        <li>
-          <span class="label">Email</span>
-          <span>
-            ${resume.basics.email}
-          </span>
-        </li>
-        <li>
-          <span class="label">Skype</span>
-          <span>
-            ${resume.basics.skype}
-          </span>
-        </li>
-      </ul>
-      <h3 class="title">LANGUAGES</h3>
-      <ul>
-        ${
-          resume.languages.map(item => `
-            <li>
-              <span class="label">
-                ${item.name}
-              </span>
-              <span>
-                ${item.level}
-              </span>
-            </li>
-          `).join('')
-        }
-      </ul>
-      <h3 class="title">LINKS</h3>
-      ${
-        resume.basics.profiles.map(item => `
-          <a class="btn" href="${item.url}" target="_blank">
-            ${item.network}
-          </a> 
-        `).join('')
-      }
-    </div>
-  </div>
-`;
+const header = Header({
+  name: resume.basics.name,
+  label: resume.basics.label
+});
+
+
+// const aside = `
+//   <div class="aside">
+//     <div class="container">
+//       <h3 class="title">CONTACT</h3>
+//       <ul>
+//         <li>
+//           <span class="label">Name</span>
+//           <span>
+//             ${resume.basics.name + ' ' + resume.basics.enname}
+//           </span>
+//         </li>
+//         <li>
+//           <span class="label">Mobile</span>
+//           <span>
+//             ${resume.basics.phone}
+//           </span>
+//         </li>
+//         <li>
+//           <span class="label">Email</span>
+//           <span>
+//             ${resume.basics.email}
+//           </span>
+//         </li>
+//         <li>
+//           <span class="label">Skype</span>
+//           <span>
+//             ${resume.basics.skype}
+//           </span>
+//         </li>
+//       </ul>
+//       <h3 class="title">LANGUAGES</h3>
+//       <ul>
+//         ${
+//           resume.languages.map(item => `
+//             <li>
+//               <span class="label">
+//                 ${item.name}
+//               </span>
+//               <span>
+//                 ${item.level}
+//               </span>
+//             </li>
+//           `).join('')
+//         }
+//       </ul>
+//       <h3 class="title">LINKS</h3>
+//       ${
+//         resume.basics.profiles.map(item => `
+//           <a class="btn" href="${item.url}" target="_blank">
+//             ${item.network}
+//           </a> 
+//         `).join('')
+//       }
+//     </div>
+//   </div>
+// `;
 
 const main = `
   <div class="main">
@@ -152,4 +151,4 @@ const main = `
 
 
 
-console.log(aside);
+// console.log(aside);
