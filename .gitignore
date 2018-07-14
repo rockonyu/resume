@@ -71,3 +71,7 @@ typings/
 
 # Serverless directories
 .serverless
+
+# 建置與開發用的資料夾
+build
+build-dev
