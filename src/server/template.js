@@ -1,10 +1,12 @@
-import * as React from 'react';
-import { renderToStaticMarkup } from 'react-dom/server';
 import Layout from '../client/components/Layout';
-import decode from 'unescape';
 
-const html = renderToStaticMarkup(
-  <Layout title='666' body='' styles='' />
+// TODO: 將 Layout 也改成 React component
+const html =  Layout(
+  {
+    title: 666,
+    body: '',
+    styles: ''
+  }
 );
 
-module.exports = decode(html);
+module.exports = html;

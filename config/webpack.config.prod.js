@@ -8,7 +8,7 @@ module.exports = [
       extensions: ['.ts', '.tsx', '.js', '.jsx']
     },
     entry: {
-      app: './src/app.ts',
+      app: './src/app.tsx',
     },
     output: {
       path: path.resolve(__dirname, '..', 'build'),

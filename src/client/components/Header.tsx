@@ -5,7 +5,7 @@ const Header = ({
   label,
 }) => (
   <div className="header">
-    <p>THE PROGRAMER</p>
+    <p>WEB DEVELOPER</p>
     <h1>{name}</h1>
     <h3>
     <span>{label}</span>

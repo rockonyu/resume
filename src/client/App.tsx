@@ -9,7 +9,7 @@ import {
   Main,
 } from './components';
 
-const App = () => (
+export const App = () => (
   <div>
     <Header name={resume.basics.name}
             label={resume.basics.label} />
