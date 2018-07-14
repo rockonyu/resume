@@ -2,16 +2,60 @@ const webpack = require('webpack');
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
+var nodeExternals = require('webpack-node-externals');
 
-module.exports = {
+module.exports = [
+  {
     mode: 'development',
-    entry: [
-      './src/client/index.tsx',
-      `webpack-hot-middleware/client?http://localhost:${process.env.HTTP_PORT}&reload=true`,
-    ],
+    entry: {
+      server: './src/server/index.js',
+    },
+    output: {
+      path: resolve(__dirname, '..', 'build-dev'),
+      filename: '[name].js',
+      publicPath: '/'
+    },
+    target: 'node',
+    node: {
+      __dirname: false,
+      __filename: false,
+    },
+    externals: nodeExternals(),
+    // plugins: [
+    //   new webpack.DefinePlugin({
+    //     'process.env': {
+    //       NODE_ENV: `'production'`
+    //     }
+    //   })
+    // ],
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          loader: 'babel-loader'
+        },
+        {
+          test: /\.tsx?$/,
+          loader: 'awesome-typescript-loader'
+        },
+      ]
+    },
+    resolve: {
+      extensions: ['.ts', '.tsx', '.js', '.jsx']
+    },
+  },
+  {
+    mode: 'development',
+    entry: {
+      main: [
+        `webpack-hot-middleware/client?reload=true`,
+        './src/client/index.tsx',
+      ],
+      vendor: ['react', 'react-dom'],
+    },
     output: {
       publicPath: '/',
-      path: resolve(__dirname, '..', 'build', 'client'),
+      path: resolve(__dirname, '..', 'build-dev', 'client'),
       filename: '[name].js',
       hotUpdateMainFilename: 'hot-update.[hash:6].json',
       hotUpdateChunkFilename: 'hot-update.[hash:6].js'
@@ -22,9 +66,9 @@ module.exports = {
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          loader: 'babel-loader?presets[]=env',
+          loader: 'babel-loader?presets[]=env&presets[]=react',
           query: {
-              presets: ['env'],
+              presets: ['env', 'react'],
           },
         },
         {
@@ -45,7 +89,8 @@ module.exports = {
       new webpack.NamedModulesPlugin(),
       new HtmlWebpackPlugin({
         inject: true,
-        template: resolve(__dirname, '..', 'src', 'client', 'index.html'),
+        filename: 'index.html',
+        template: resolve(__dirname, '..', 'src', 'server', 'template.js'),
         //favicon: resolve(__dirname, '..', 'src', 'client', 'static', 'favicon.png'),
         alwaysWriteToDisk: true
       }),
@@ -75,4 +120,5 @@ module.exports = {
       entrypoints: false,
       modules: false
     }
-  };
+  }
+];
