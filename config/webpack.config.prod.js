@@ -3,6 +3,7 @@ const path = require('path');
 
 module.exports = [
   {
+    mode: 'production',
     resolve: {
       extensions: ['.ts', '.tsx', '.js', '.jsx']
     },
@@ -10,7 +11,7 @@ module.exports = [
       app: './src/app.ts',
     },
     output: {
-      path: path.resolve(__dirname, 'build'),
+      path: path.resolve(__dirname, '..', 'build'),
       filename: '[name].js',
       publicPath: '/'
     },
