@@ -63,7 +63,7 @@ const Main = ({
           {
             daily.map(item => (
               <li key={item}>
-                ${item}
+                {item}
               </li>
             ))
           }
@@ -112,7 +112,7 @@ const Main = ({
               {item.company}
             </h4>
             {
-              item.summary ? <p>${item.summary}</p> : ''
+              item.summary ? <p>{item.summary}</p> : ''
             }
           </div>
         ))
@@ -127,7 +127,7 @@ const Main = ({
               </span>
               <div className="time-point"></div>
               {
-                item.fromDate ? <p>${item.fromDate}</p> : ''
+                item.fromDate ? <p>{item.fromDate}</p> : ''
               }
             </div>
             <h3 className="label">
@@ -139,7 +139,7 @@ const Main = ({
             <ul>
               {
                 item.highlights.map(highlight => 
-                  <li key={highlight}>${highlight}</li>
+                  <li key={highlight}>{highlight}</li>
                 )
               }
             </ul>
