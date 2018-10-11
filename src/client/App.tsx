@@ -12,22 +12,25 @@ import {
 export const App = () => (
   <div>
     <Header name={resume.basics.name}
-            label={resume.basics.label} />
-    <div style={{display:"flex"}}>
-      <Aside name={resume.basics.name}
-              enname={resume.basics.enname}
-              mobile={resume.basics.phone}
-              email={resume.basics.email}
-              languages={resume.languages}
-              profiles={resume.basics.profiles} />
-      <Main summary={resume.basics.summary}
-            techs={resume.techs}
-            skills={resume.skills}
-            daily={resume.daily}
-            education={resume.education}
-            work={resume.work}
-            projects={resume.projects} />
-    </div>
+            label={resume.basics.label}
+    />
+    <Main summary={resume.basics.summary}
+          techs={resume.techs}
+          skills={resume.skills}
+          daily={resume.daily}
+          education={resume.education}
+          work={resume.work}
+          projects={resume.projects}
+          milestone={resume.milestone}
+    />
+    <Aside name={resume.basics.name}
+           enname={resume.basics.enname}
+           mobile={resume.basics.phone}
+           email={resume.basics.email}
+           linkedin={resume.basics.linkedin}
+           languages={resume.languages}
+           profiles={resume.basics.profiles}
+    />
   </div>
 );
 

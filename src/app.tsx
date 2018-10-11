@@ -7,7 +7,7 @@ const styles = require('./client/style.css').toString();
 
 const Page = Layout(
   {
-    title: '2017 張瑀的個人履歷',
+    title: (new Date).getFullYear() + ' 張瑀的個人履歷',
     body: renderToStaticMarkup(<App />),
     styles: styles
   }

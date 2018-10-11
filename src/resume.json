@@ -6,6 +6,7 @@
     "picture": "http://graph.facebook.com/1358756972/picture?type=large",
     "email": "drivers_high1937@hotmail.com",
     "skype": "austin@infbeyond.com",
+    "linkedin": "https://www.linkedin.com/in/austin119",
     "phone": "0919-185854",
     "website": "https://rockonyu.github.io",
     "birthday": "1988-08-26",
@@ -162,6 +163,22 @@
       "使用 ADO.Net 進行資料庫存取"
     ]
   }],
+  "skills": [
+    "JavaScript",
+    "AngularJS",
+    "TypeScript",
+    "Webpack",
+    "HTML5",
+    "CSS、SCSS",
+    "Angular",
+    "React",
+    "Node.js",
+    "Scrum",
+    "Git",
+    "C#",
+    "ASP.Net MVC",
+    "SQL Server"
+  ],
   "techs":[
     {
       "label": "Backend",
@@ -206,36 +223,6 @@
       ]
     }
   ],
-  "skills": [{
-    "name": "Backend Develop",
-    "score": 80,
-    "level": "熟悉"
-  },
-  {
-    "name": "Frontend Develop",
-    "score": 75,
-    "level": "熟悉"
-  },
-  {
-    "name": "Communication & Teamwork",
-    "score": 70,
-    "level": "熟悉"
-  },
-  {
-    "name": "Performance Tuning",
-    "score": 65,
-    "level": "中等到熟悉"
-  },
-  {
-    "name": "System Analysis",
-    "score": 50,
-    "level": "中等"
-  }],
-  "daily": [
-    "Backend Develop",
-    "Frontend Develop",
-    "Others"
-  ],
   "languages": [{
     "name": "中文",
     "level": "精通"
@@ -252,6 +239,63 @@
       "同構 JavaScript 應用程式"
     ]
   }],
+  "milestone": [
+    {
+      "name": "91APP",
+      "title": "前端工程師",
+      "to": "至今",
+      "from": "2017",
+      "projects": [
+        "2018 - 協助 91APP 台灣站台支援多語系與國際版訂購流程",
+        "2018 - 多語系 Language Tool 的開發架構與流程調整 (React & Webpack)",
+        "2018 - 91APP 馬拉西亞站台支援 MolPay 的 ReOrder 功能",
+        "2017 - 與後端協作串接馬拉西亞 EasyParcel 服務提供當地賣家出貨",
+        "2017 - 協助 91APP 的前後台 Lite 產品多語系用以落地馬來西亞"
+      ]
+    },
+    {
+      "name": "多奇數位",
+      "title": "ASP.Net MVC 網站工程師",
+      "to": "2017",
+      "from": "2014",
+      "projects": [
+        "2017 - 建立杜夫萊茵檢驗報告網站提供廠商提交與查詢商品定期的鑑驗報告",
+        "2017 - 台灣愛惠浦新增超商取貨功能 (日翊物流)，此功能上線後佔總訂單約 60%",
+        "2017 - 使用 Angular2 重新製作電影蛋糕行動版，使用 Bearer Token 驗證用戶",
+        "2016 - 與台灣雙葉電子合作進行高雄市線上即時服務的前台改版 (Angular2)",
+        "2016 - 電影蛋糕網站提供 OAuth 2.0 驗證授權機制可提供給第三方廠商串接",
+        "2016 - 將電影蛋糕會員系統升級至 identity 2.0 以便未來支援 OAuth 驗證",
+        "2015 - 與第三方公司協作電影隊長 APP 進行大陸地區微影院票券販售 (ASP.Net Web API)",
+        "2015 - 協助 PM 與開發日月光上海廠的材料價格報表 (D3.js & C3.js)",
+        "2015 - 電影蛋糕網站串接微信登入 API 與整合分享至微信等功能協助落地大陸市場",
+        "2015 - 台灣愛惠浦後台與資料庫結構規劃並串接紅陽金流服務",
+        "2015 - 因與三角創意 3WCreative 協作好室配專案過程順利而取得愛惠浦官網建置合約",
+        "2014 - 電影蛋糕行動版網站專案 (ASP.Net MVC & AngularJS)",
+        "2014 - 建立好室配 HousePal 後台與資料庫結構 (ASP.Net MVC & SQL Server)"
+      ]
+    },
+    {
+      "name": "日月光半導體資訊部",
+      "title": "SAP 資訊工程師",
+      "to": "2014",
+      "from": "2012",
+      "projects": [
+        "2013 - 協助 QA 部門透過 PDA 管控操作員借出與歸回料件 (WCF & WinForm)",
+        "2013 - 建立 PDA 固定資產盤點應用程式協助會計部門盤點公司資產 (WinForm)",
+        "2012 - 固定資產查詢系統協助查看編列資產折舊狀況與現值 (WebForm)",
+        "2012 - 透過 SAP 協助會計部門結算應收、應付帳款與季度、年度報表產生"
+      ]
+    },
+    {
+      "name": "逢甲大學",
+      "title": "資訊工程學系",
+      "to": "2010",
+      "from": "",
+      "projects": [
+        "2010 - 專題：使用 JAVA 對市面上機車牌照進行 OCR 影像辨識"
+      ]
+    }
+  ],
   "recommended": [{
     "name": "ilandy",
     "position": "大心數位 - 前端工程師",
