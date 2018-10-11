@@ -15,7 +15,8 @@ html,body{
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  padding:  0 1.5rem;
+  max-width: 820px;
 }
 
 ol, ul {
@@ -214,7 +215,7 @@ ol, ul {
   display: inline-block;
   background-color: #2f393b;
   color: white;
-  margin: 3px;
+  margin: 5px;
   padding: 3px 5px;
 }
 

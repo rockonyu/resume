@@ -11,7 +11,7 @@ const Main = ({
   milestone,
 }) => (
   <div className="container main">
-      <h3 className="title">PROFILE</h3>
+      <h3 className="title">SUMMARY</h3>
       <p>{summary}</p>
       <h3 className="title">SKILL</h3>
       <div>
