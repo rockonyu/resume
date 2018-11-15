@@ -1,4 +1,4 @@
-const Layout = ({title, body, styles}) => `
+const Layout = ({ title, body, styles }) => `
   <!doctype html>
   <html ⚡>
     <head>
