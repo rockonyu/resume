@@ -1,50 +1,51 @@
 {
-  "name": "resume",
-  "version": "0.0.1",
-  "description": "",
-  "main": "src/app.ts",
-  "scripts": {
-    "dev": "webpack --config=config/webpack.config.dev.js && node build-dev/server.js",
-    "build": "webpack --config=config/webpack.config.prod.js && node build/app",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rockonyu/resume.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rockonyu/resume/issues"
-  },
-  "homepage": "https://github.com/rockonyu/resume#readme",
-  "devDependencies": {
-    "@types/node": "^10.5.2",
-    "awesome-typescript-loader": "^5.2.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^1.0.0",
-    "emotion": "^9.2.12",
-    "emotion-normalize": "^8.0.0",
-    "express": "^4.16.3",
-    "html-webpack-harddisk-plugin": "^0.2.0",
-    "html-webpack-plugin": "^3.2.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-emotion": "^9.2.12",
-    "react-hot-loader": "^4.3.3",
-    "style-loader": "^0.21.0",
-    "typescript": "^2.9.2",
-    "webpack": "^4.16.0",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-middleware": "^3.1.3",
-    "webpack-hot-middleware": "^2.22.2",
-    "webpack-node-externals": "^1.7.2"
-  },
-  "dependencies": {
-    "@types/react": "^16.7.6"
-  }
+    "name": "resume",
+    "version": "0.0.1",
+    "description": "",
+    "main": "src/app.ts",
+    "scripts": {
+        "dev": "webpack --config=config/webpack.config.dev.js && node build-dev/server.js",
+        "build": "webpack --config=config/webpack.config.prod.js && node build/app",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rockonyu/resume.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rockonyu/resume/issues"
+    },
+    "homepage": "https://github.com/rockonyu/resume#readme",
+    "devDependencies": {
+        "@emotion/core": "^10.0.14",
+        "@emotion/styled": "^10.0.14",
+        "@types/node": "^10.5.2",
+        "@types/react": "^16.8.6",
+        "awesome-typescript-loader": "^5.2.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "css-loader": "^1.0.0",
+        "emotion": "10.0.14",
+        "emotion-normalize": "^8.0.0",
+        "express": "^4.16.3",
+        "html-webpack-harddisk-plugin": "^0.2.0",
+        "html-webpack-plugin": "^3.2.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-emotion": "^9.2.12",
+        "react-hot-loader": "^4.3.3",
+        "style-loader": "^0.21.0",
+        "typescript": "^2.9.2",
+        "webpack": "^4.16.0",
+        "webpack-cli": "^3.0.8",
+        "webpack-dev-middleware": "^3.1.3",
+        "webpack-hot-middleware": "^2.22.2",
+        "webpack-node-externals": "^1.7.2"
+    },
+    "dependencies": {}
 }
