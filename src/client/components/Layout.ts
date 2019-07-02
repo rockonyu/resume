@@ -7,7 +7,7 @@ const Layout = ({ title, body, description, styles }) => `
       <title>${title}</title>
       <link rel="canonical" href="http://rockonyu.github.io/resume">
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-      <meta name="description" content=${description}>
+      <meta name="description" content="${description}">
       <script type="application/ld+json">
         {
           "@context": "http://schema.org",
