@@ -1,13 +1,28 @@
 import * as React from 'react'
-import { hot } from 'react-hot-loader'
+import { createGlobalStyle } from 'styled-components'
 import * as result from '../../public/resume.json'
+import { Header, Aside, Main } from './components'
 
 const resume = result as any
 
-import { Header, Aside, Main } from './components'
+const GlobalStyle = createGlobalStyle`
+    * {
+        box-sizing: border-box;
+        font-family: 微軟正黑體;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+`
 
 export const App = () => (
-    <div>
+    <React.Fragment>
+        <GlobalStyle />
         <Header name={resume.basics.name} label={resume.basics.label} />
         <Main
             summary={resume.basics.summary}
@@ -28,7 +43,7 @@ export const App = () => (
             languages={resume.languages}
             profiles={resume.basics.profiles}
         />
-    </div>
+    </React.Fragment>
 )
 
-export default hot(module)(App)
+export default App

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-
+import { hot } from 'react-hot-loader'
 import App from './App'
-import './style.css'
 
-ReactDOM.render(<App />, document.getElementById('app'))
+const MyApp = hot(module)(App)
+ReactDOM.render(<MyApp />, document.getElementById('app'))

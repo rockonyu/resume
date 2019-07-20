@@ -15,300 +15,62 @@
         }
       </script>
       <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-      <style amp-custom>
-        * {
-    box-sizing: border-box;
-    font-family: 微軟正黑體;
-    position: relative;
-    vertical-align: top;
-    -webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    max-width: 820px;
-}
-
-ol,
-ul {
-    padding-left: 1.5em;
-    margin-top: 0;
-}
-
-ol > li,
-ul > li {
-    line-height: 1.8em;
-    padding-left: 0.5em;
-}
-
-.wrapper {
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    min-height: 100vh;
-    background-color: #ececec;
-}
-
-.header {
-    text-align: center;
-    background-color: #2f393b;
-    color: white;
-    padding: 2em;
-    height: 280px;
-}
-
-.header > p {
-    font-size: 120%;
-    font-weight: 900;
-    padding: 1em;
-    margin: 0;
-}
-
-.header > h1 {
-    font-size: 3em;
-    letter-spacing: 1em;
-    padding: 0 4em 1em 5em;
-    margin: 0;
-    display: inline-block;
-    border-bottom: solid 1px white;
-}
-
-.header > h3 {
-    margin: 0.5em;
-}
-
-.header > h3 > span {
-    padding: 0.5em;
-    padding-left: 1.5em;
-    border: solid 1px white;
-    letter-spacing: 1em;
-    top: -1.2em;
-    background-color: #2f393b;
-}
-
-.aside {
-    box-sizing: border-box;
-    text-align: left;
-    background-color: #ececec;
-    padding-bottom: 50px;
-}
-
-.avatar {
-    border-radius: 100%;
-    display: inline-block;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-top: 3em;
-}
-
-.avatar > img {
-    width: 180px;
-    height: 180px;
-}
-
-.title {
-    border-bottom: solid 1px #2f393b;
-    padding-bottom: 0.5em;
-    padding-top: 1em;
-    letter-spacing: 5px;
-}
-
-.aside > .container > .title {
-    margin-bottom: 0;
-}
-
-.aside > .container > ul {
-    margin-top: 0;
-    list-style: none;
-    padding: 0;
-}
-
-.aside > .container > ul > li {
-    border-bottom: solid 1px #2f393b;
-    padding: 0.5em 0;
-}
-
-.aside > .container span {
-    display: inline-block;
-    word-wrap: break-word;
-    width: 70%;
-}
-
-.aside > .container span.label {
-    width: 30%;
-    font-weight: 600;
-}
-
-.aside a {
-    text-decoration: none;
-}
-
-.main {
-    box-sizing: border-box;
-    background-color: white;
-}
-
-.main > p {
-    line-height: 1.7em;
-    white-space: pre-line;
-}
-
-.rollout {
-    position: absolute;
-}
-
-.work {
-    border-left: solid 3px #ececec;
-    padding: 0 0 1em 2em;
-    margin-left: 70px;
-    top: 10px;
-}
-
-.work > .label {
-    margin: 0;
-    padding-bottom: 0.5em;
-    letter-spacing: 2px;
-}
-
-.work > p {
-    margin: 0;
-}
-
-.work > .time-flag,
-.work h3,
-.work h4,
-.work p {
-    top: -10px;
-}
-
-.time-flag {
-    position: absolute;
-    display: inline-block;
-    left: -5.65em;
-    font-size: 12px;
-}
-
-.time-flag span {
-    background-color: #2f393b;
-    color: white;
-    padding: 3px 0.5em 3px 1em;
-    display: inline-block;
-    height: 22px;
-    width: 48px;
-    line-height: 17px;
-}
-
-.time-flag span:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -10px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 11px 0 11px 10px;
-    border-color: transparent transparent transparent #2f393b;
-}
-
-.time-flag p {
-    padding-left: 1em;
-}
-
-.time-point {
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 100%;
-    background-color: #2f393b;
-    left: 1em;
-    top: 0.6em;
-}
-
-.tag {
-    display: inline-block;
-    background-color: #2f393b;
-    color: white;
-    margin: 5px;
-    padding: 3px 5px;
-}
-
-a {
-    color: #2f393b;
-}
-
-.btn {
-    text-decoration: none;
-    display: inline-block;
-    background-color: #2f393b;
-    color: white;
-    padding: 5px 10px;
-    margin: 0.75em 0.5em 0 0;
-    transition: 0.25s;
-    border: solid 1px #2f393b;
-    line-height: 1em;
-}
-
-.btn:hover {
-    color: #2f393b;
-    background-color: #ececec;
-}
-
-.footer {
-    background-color: #2f393b;
-    padding: 2em;
-    color: white;
-    text-align: center;
-}
-
-@media (max-width: 767px) {
-    .header > h1 {
-        padding: 0px 0.5em 1em 1.5em;
-    }
-
-    .header > h3 > span {
-        letter-spacing: 0.5em;
-    }
-
-    .work {
-        margin: 0;
-        border: none;
-        padding: 0;
-        padding-bottom: 1em;
-    }
-
-    .work > .label {
-        margin-left: 2em;
-    }
-
-    .time-flag {
-        left: -2.5em;
-    }
-
-    .time-point {
-        display: none;
-    }
-
-    .aside > .container span {
-        display: block;
-        width: auto;
-    }
-}
-
-      </style>
+      <style amp-custom data-styled="beTzil fpUTCZ rHdPC jDDjFI hAlbTv iOMkg jJcIsT bRIJVM eZqEmc eXXJZe gJQfgZ iVIhko clgHhW hvqLHu drTwru gxoIUE bThqHx bhjZWL kPfpiY gdEYcV dioENG jVMzpV dtNLqU xKOKP goZNZO" data-styled-version="4.3.2">
+/* sc-component-id: sc-bdVaJa */
+.beTzil{text-align:center;background-color:#2f393b;color:white;padding:2em;height:280px;}
+/* sc-component-id: sc-bwzfXH */
+.fpUTCZ{font-size:120%;font-weight:900;padding:1em;margin:0;}
+/* sc-component-id: sc-htpNat */
+.rHdPC{font-size:3em;-webkit-letter-spacing:1em;-moz-letter-spacing:1em;-ms-letter-spacing:1em;letter-spacing:1em;padding:0 4em 1em 5em;margin:0;display:inline-block;border-bottom:solid 1px white;} @media (max-width:767px){.rHdPC{padding:0px 0.5em 1em 1.5em;}}
+/* sc-component-id: sc-bxivhb */
+.jDDjFI{margin:0.5em;}
+/* sc-component-id: sc-ifAKCX */
+.hAlbTv{padding:0.5em;padding-left:1.5em;border:solid 1px white;-webkit-letter-spacing:1em;-moz-letter-spacing:1em;-ms-letter-spacing:1em;letter-spacing:1em;top:-1.2em;background-color:#2f393b;position:relative;} @media (max-width:767px){.hAlbTv{-webkit-letter-spacing:0.5em;-moz-letter-spacing:0.5em;-ms-letter-spacing:0.5em;letter-spacing:0.5em;}}
+/* sc-component-id: sc-EHOje */
+.bhjZWL{text-align:left;background-color:#ececec;padding-bottom:50px;}
+/* sc-component-id: sc-bZQynM */
+.kPfpiY{margin:0 auto;padding:0 1.5rem;max-width:820px;}
+/* sc-component-id: sc-gzVnrw */
+.gdEYcV{margin-bottom:0;border-bottom:solid 1px #2f393b;padding-bottom:0.5em;padding-top:1em;-webkit-letter-spacing:5px;-moz-letter-spacing:5px;-ms-letter-spacing:5px;letter-spacing:5px;}
+/* sc-component-id: sc-htoDjs */
+.dioENG{margin-top:0;list-style:none;padding:0;}
+/* sc-component-id: sc-dnqmqq */
+.jVMzpV{border-bottom:solid 1px #2f393b;padding:0.5em 0;}
+/* sc-component-id: sc-iwsKbI */
+.dtNLqU{display:inline-block;word-wrap:break-word;width:120px;font-weight:600;} @media (max-width:767px){.dtNLqU{display:block;width:auto;}}
+/* sc-component-id: sc-gZMcBi */
+.xKOKP{display:inline-block;word-wrap:break-word;} @media (max-width:767px){.xKOKP{display:block;width:auto;}}
+/* sc-component-id: sc-gqjmRU */
+.goZNZO{-webkit-text-decoration:none;text-decoration:none;color:#2f393b;}
+/* sc-component-id: sc-VigVT */
+.iOMkg{background-color:white;margin:0 auto;padding:0 1.5rem;max-width:820px;}
+/* sc-component-id: sc-jTzLTM */
+.jJcIsT{border-bottom:solid 1px #2f393b;padding-bottom:0.5em;padding-top:1em;-webkit-letter-spacing:5px;-moz-letter-spacing:5px;-ms-letter-spacing:5px;letter-spacing:5px;}
+/* sc-component-id: sc-fjdhpX */
+.eZqEmc{display:inline-block;background-color:#2f393b;color:white;margin:5px;padding:3px 5px;}
+/* sc-component-id: sc-jzJRlG */
+.bRIJVM{line-height:1.7em;white-space:pre-line;}
+/* sc-component-id: sc-cSHVUG */
+.eXXJZe{border-left:solid 3px #ececec;padding:0 0 1em 2em;margin-left:70px;top:10px;position:relative;} @media (max-width:767px){.eXXJZe{margin:0;border:none;padding:0;padding-bottom:1em;}}
+/* sc-component-id: sc-kAzzGY */
+.drTwru{margin:0;padding-bottom:0.5em;-webkit-letter-spacing:2px;-moz-letter-spacing:2px;-ms-letter-spacing:2px;letter-spacing:2px;} @media (max-width:767px){.drTwru{margin-left:2em;}}
+/* sc-component-id: sc-chPdSV */
+.gxoIUE{padding-left:1.5em;margin-top:0;}
+/* sc-component-id: sc-kgoBCf */
+.bThqHx{line-height:1.8em;padding-left:0.5em;}
+/* sc-component-id: sc-kGXeez */
+.gJQfgZ{position:absolute;display:inline-block;left:-5.65em;font-size:12px;} @media (max-width:767px){.gJQfgZ{left:-2.5em;}}
+/* sc-component-id: sc-kpOJdX */
+.clgHhW{display:inline-block;width:0.5em;height:0.5em;border-radius:100%;background-color:#2f393b;left:1.2em;top:0.8em;position:relative;} @media (max-width:767px){.clgHhW{display:none;}}
+/* sc-component-id: sc-dxgOiQ */
+.iVIhko{background-color:#2f393b;color:white;padding:3px 0.5em 3px 1em;display:inline-block;height:22px;width:48px;line-height:17px;position:relative;} .iVIhko:after{content:'';position:absolute;top:0;right:-10px;width:0;height:0;border-style:solid;border-width:11px 0 11px 10px;border-color:transparent transparent transparent #2f393b;}
+/* sc-component-id: sc-ckVGcZ */
+.hvqLHu{padding-left:1em;position:relative;top:-10px;}
+/* sc-component-id: sc-global-1066002052 */
+*{box-sizing:border-box;font-family:微軟正黑體;} html,body{width:100%;height:100%;padding:0;margin:0;}</style>
     </head>
     <body>
-      <div id="app"><div><div class="header"><p>WEB DEVELOPER</p><h1>張瑀</h1><h3><span>網頁程式設計師</span></h3></div><div class="container main"><h3 class="title">SUMMARY</h3><p>Austin 對網頁開發有很大的熱忱，累計六年多的網頁開發經歷，在迭代​開發的週期內仍持續提升程式碼品質與維護性，降低後續開發成本；做事細心、主動積極並與團隊溝通協作順暢，其認真對待工作的態度經常受到合作夥伴的肯定。
-工作之餘也閱讀許多技術書籍，且對網頁美感保持一定的敏銳度，喜歡建立用戶體驗與維護性兼具的網頁程式，並在程式生涯總是盡力成為更好的開發者。</p><h3 class="title">SKILL</h3><div><span class="tag">JavaScript</span><span class="tag">AngularJS</span><span class="tag">TypeScript</span><span class="tag">Webpack</span><span class="tag">HTML5</span><span class="tag">CSS、SCSS</span><span class="tag">Angular</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Scrum</span><span class="tag">Git</span><span class="tag">C#</span><span class="tag">ASP.Net MVC</span><span class="tag">SQL Server</span></div><h3 class="title">MILESTONE</h3><div class="work"><div class="time-flag"><span>至今</span><div class="time-point"></div><p>2017</p></div><h3 class="label">91APP - 前端工程師</h3><ul><li>2018 - 協助 91APP 台灣站台支援多語系與國際版訂購流程</li><li>2018 - 多語系 Language Tool 的開發架構與流程調整 (React &amp; Webpack)</li><li>2018 - 91APP 馬拉西亞站台支援 MolPay 的 ReOrder 功能</li><li>2017 - 與後端協作串接馬拉西亞 EasyParcel 服務提供當地賣家出貨</li><li>2017 - 協助 91APP 的前後台 Lite 產品多語系用以落地馬來西亞</li></ul></div><div class="work"><div class="time-flag"><span>2017</span><div class="time-point"></div><p>2014</p></div><h3 class="label">多奇數位 - ASP.Net MVC 網站工程師</h3><ul><li>2017 - 建立杜夫萊茵檢驗報告網站提供廠商提交與查詢商品定期的鑑驗報告</li><li>2017 - 台灣愛惠浦新增超商取貨功能 (日翊物流)，此功能上線後佔總訂單約 60%</li><li>2017 - 使用 Angular2 重新製作電影蛋糕行動版，使用 Bearer Token 驗證用戶</li><li>2016 - 與台灣雙葉電子合作進行高雄市線上即時服務的前台改版 (Angular2)</li><li>2016 - 電影蛋糕網站提供 OAuth 2.0 驗證授權機制可提供給第三方廠商串接</li><li>2016 - 將電影蛋糕會員系統升級至 identity 2.0 以便未來支援 OAuth 驗證</li><li>2015 - 與第三方協作電影隊長 APP 販售大陸地區的微影院票券 (ASP.Net Web API)</li><li>2015 - 協助 PM 與開發日月光上海廠的材料價格報表 (D3.js &amp; C3.js)</li><li>2015 - 電影蛋糕網站串接微信登入 API 與整合分享至微信等功能協助落地大陸市場</li><li>2015 - 台灣愛惠浦後台與資料庫結構規劃並串接紅陽金流服務</li><li>2015 - 與三角創意 3WCreative 的好室配專案過程順利而取得愛惠浦官網合約</li><li>2014 - 電影蛋糕行動版網站專案 (ASP.Net MVC &amp; AngularJS)</li><li>2014 - 建立好室配 HousePal 後台與資料庫結構 (ASP.Net MVC &amp; SQL Server)</li></ul></div><div class="work"><div class="time-flag"><span>2014</span><div class="time-point"></div><p>2012</p></div><h3 class="label">日月光半導體資訊部 - SAP 資訊工程師</h3><ul><li>2013 - 協助 QA 部門透過 PDA 管控操作員借出與歸回料件 (WCF &amp; WinForm)</li><li>2013 - 建立 PDA 固定資產盤點應用程式協助會計部門盤點公司資產 (WinForm)</li><li>2012 - 固定資產查詢系統協助查看編列資產折舊狀況與現值 (WebForm)</li><li>2012 - 透過 SAP 協助會計部門結算應收、應付帳款與季度、年度報表產生</li></ul></div><div class="work"><div class="time-flag"><span>2010</span><div class="time-point"></div><p></p></div><h3 class="label">逢甲大學 - 資訊工程學系</h3><ul><li>2010 - 專題：使用 JAVA 對市面上機車牌照進行 OCR 影像辨識</li></ul></div></div><div class="aside"><div class="container"><h3 class="title">CONTACT</h3><ul><li><span class="label">Name</span><span>張瑀 Austin</span></li><li><span class="label">Mobile</span><span>0919-185854</span></li><li><span class="label">Email</span><span><a href="mailto:drivers_high1937@hotmail.com">drivers_high1937@hotmail.com</a></span></li><li><span class="label">LinkedIn</span><span><a href="https://www.linkedin.com/in/austin119" target="_blank">https://www.linkedin.com/in/austin119</a></span></li></ul></div></div></div></div>
+      <div id="app"><div class="sc-bdVaJa beTzil"><p class="sc-bwzfXH fpUTCZ">WEB DEVELOPER</p><h1 class="sc-htpNat rHdPC">張瑀</h1><h3 class="sc-bxivhb jDDjFI"><span class="sc-ifAKCX hAlbTv">網頁程式設計師</span></h3></div><div class="sc-VigVT iOMkg"><h3 class="sc-jTzLTM jJcIsT">SUMMARY</h3><p class="sc-jzJRlG bRIJVM">Austin 對網頁開發有很大的熱忱，累計六年多的網頁開發經歷，在迭代​開發的週期內仍持續提升程式碼品質與維護性，降低後續開發成本；做事細心、主動積極並與團隊溝通協作順暢，其認真對待工作的態度經常受到合作夥伴的肯定。
+工作之餘也閱讀許多技術書籍，且對網頁美感保持一定的敏銳度，喜歡建立用戶體驗與維護性兼具的網頁程式，並在程式生涯總是盡力成為更好的開發者。</p><h3 class="sc-jTzLTM jJcIsT">SKILL</h3><div><span class="sc-fjdhpX eZqEmc">JavaScript</span><span class="sc-fjdhpX eZqEmc">AngularJS</span><span class="sc-fjdhpX eZqEmc">TypeScript</span><span class="sc-fjdhpX eZqEmc">Webpack</span><span class="sc-fjdhpX eZqEmc">HTML5</span><span class="sc-fjdhpX eZqEmc">CSS、SCSS</span><span class="sc-fjdhpX eZqEmc">Angular</span><span class="sc-fjdhpX eZqEmc">React</span><span class="sc-fjdhpX eZqEmc">Node.js</span><span class="sc-fjdhpX eZqEmc">Scrum</span><span class="sc-fjdhpX eZqEmc">Git</span><span class="sc-fjdhpX eZqEmc">C#</span><span class="sc-fjdhpX eZqEmc">ASP.Net MVC</span><span class="sc-fjdhpX eZqEmc">SQL Server</span></div><h3 class="sc-jTzLTM jJcIsT">MILESTONE</h3><div class="sc-cSHVUG eXXJZe"><div class="sc-kGXeez gJQfgZ"><span class="sc-dxgOiQ iVIhko">至今</span><p class="sc-kpOJdX clgHhW"></p><p class="sc-ckVGcZ hvqLHu">2017</p></div><h3 class="sc-kAzzGY drTwru">91APP - 前端工程師</h3><ul class="sc-chPdSV gxoIUE"><li class="sc-kgoBCf bThqHx">2018 - 協助 91APP 台灣站台支援多語系與國際版訂購流程</li><li class="sc-kgoBCf bThqHx">2018 - 多語系 Language Tool 的開發架構與流程調整 (React &amp; Webpack)</li><li class="sc-kgoBCf bThqHx">2018 - 91APP 馬拉西亞站台支援 MolPay 的 ReOrder 功能</li><li class="sc-kgoBCf bThqHx">2017 - 與後端協作串接馬拉西亞 EasyParcel 服務提供當地賣家出貨</li><li class="sc-kgoBCf bThqHx">2017 - 協助 91APP 的前後台 Lite 產品多語系用以落地馬來西亞</li></ul></div><div class="sc-cSHVUG eXXJZe"><div class="sc-kGXeez gJQfgZ"><span class="sc-dxgOiQ iVIhko">2017</span><p class="sc-kpOJdX clgHhW"></p><p class="sc-ckVGcZ hvqLHu">2014</p></div><h3 class="sc-kAzzGY drTwru">多奇數位 - ASP.Net MVC 網站工程師</h3><ul class="sc-chPdSV gxoIUE"><li class="sc-kgoBCf bThqHx">2017 - 建立杜夫萊茵檢驗報告網站提供廠商提交與查詢商品定期的鑑驗報告</li><li class="sc-kgoBCf bThqHx">2017 - 台灣愛惠浦新增超商取貨功能 (日翊物流)，此功能上線後佔總訂單約 60%</li><li class="sc-kgoBCf bThqHx">2017 - 使用 Angular2 重新製作電影蛋糕行動版，使用 Bearer Token 驗證用戶</li><li class="sc-kgoBCf bThqHx">2016 - 與台灣雙葉電子合作進行高雄市線上即時服務的前台改版 (Angular2)</li><li class="sc-kgoBCf bThqHx">2016 - 電影蛋糕網站提供 OAuth 2.0 驗證授權機制可提供給第三方廠商串接</li><li class="sc-kgoBCf bThqHx">2016 - 將電影蛋糕會員系統升級至 identity 2.0 以便未來支援 OAuth 驗證</li><li class="sc-kgoBCf bThqHx">2015 - 與第三方協作電影隊長 APP 販售大陸地區的微影院票券 (ASP.Net Web API)</li><li class="sc-kgoBCf bThqHx">2015 - 協助 PM 與開發日月光上海廠的材料價格報表 (D3.js &amp; C3.js)</li><li class="sc-kgoBCf bThqHx">2015 - 電影蛋糕網站串接微信登入 API 與整合分享至微信等功能協助落地大陸市場</li><li class="sc-kgoBCf bThqHx">2015 - 台灣愛惠浦後台與資料庫結構規劃並串接紅陽金流服務</li><li class="sc-kgoBCf bThqHx">2015 - 與三角創意 3WCreative 的好室配專案過程順利而取得愛惠浦官網合約</li><li class="sc-kgoBCf bThqHx">2014 - 電影蛋糕行動版網站專案 (ASP.Net MVC &amp; AngularJS)</li><li class="sc-kgoBCf bThqHx">2014 - 建立好室配 HousePal 後台與資料庫結構 (ASP.Net MVC &amp; SQL Server)</li></ul></div><div class="sc-cSHVUG eXXJZe"><div class="sc-kGXeez gJQfgZ"><span class="sc-dxgOiQ iVIhko">2014</span><p class="sc-kpOJdX clgHhW"></p><p class="sc-ckVGcZ hvqLHu">2012</p></div><h3 class="sc-kAzzGY drTwru">日月光半導體資訊部 - SAP 資訊工程師</h3><ul class="sc-chPdSV gxoIUE"><li class="sc-kgoBCf bThqHx">2013 - 協助 QA 部門透過 PDA 管控操作員借出與歸回料件 (WCF &amp; WinForm)</li><li class="sc-kgoBCf bThqHx">2013 - 建立 PDA 固定資產盤點應用程式協助會計部門盤點公司資產 (WinForm)</li><li class="sc-kgoBCf bThqHx">2012 - 固定資產查詢系統協助查看編列資產折舊狀況與現值 (WebForm)</li><li class="sc-kgoBCf bThqHx">2012 - 透過 SAP 協助會計部門結算應收、應付帳款與季度、年度報表產生</li></ul></div><div class="sc-cSHVUG eXXJZe"><div class="sc-kGXeez gJQfgZ"><span class="sc-dxgOiQ iVIhko">2010</span><p class="sc-kpOJdX clgHhW"></p><p class="sc-ckVGcZ hvqLHu"></p></div><h3 class="sc-kAzzGY drTwru">逢甲大學 - 資訊工程學系</h3><ul class="sc-chPdSV gxoIUE"><li class="sc-kgoBCf bThqHx">2010 - 專題：使用 JAVA 對市面上機車牌照進行 OCR 影像辨識</li></ul></div></div><div class="sc-EHOje bhjZWL"><div class="sc-bZQynM kPfpiY"><h3 class="sc-gzVnrw gdEYcV">CONTACT</h3><ul class="sc-htoDjs dioENG"><li class="sc-dnqmqq jVMzpV"><span class="sc-iwsKbI dtNLqU">Name</span><span class="sc-gZMcBi xKOKP">張瑀 Austin</span></li><li class="sc-dnqmqq jVMzpV"><span class="sc-iwsKbI dtNLqU">Mobile</span><span class="sc-gZMcBi xKOKP">0919-185854</span></li><li class="sc-dnqmqq jVMzpV"><span class="sc-iwsKbI dtNLqU">Email</span><span class="sc-gZMcBi xKOKP"><a href="mailto:drivers_high1937@hotmail.com" class="sc-gqjmRU goZNZO">drivers_high1937@hotmail.com</a></span></li><li class="sc-dnqmqq jVMzpV"><span class="sc-iwsKbI dtNLqU">LinkedIn</span><span class="sc-gZMcBi xKOKP"><a href="https://www.linkedin.com/in/austin119" target="_blank" class="sc-gqjmRU goZNZO">https://www.linkedin.com/in/austin119</a></span></li></ul></div></div></div>
     </body>
   </html>

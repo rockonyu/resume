@@ -63,10 +63,6 @@ module.exports = [
                     test: /\.tsx?$/,
                     loader: 'awesome-typescript-loader',
                 },
-                {
-                    test: /\.css$/,
-                    loaders: ['style-loader', 'css-loader'],
-                },
             ],
         },
         plugins: [

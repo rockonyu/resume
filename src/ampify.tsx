@@ -3,14 +3,18 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { Layout } from './client/components'
 import { App } from './client/App'
 import * as result from '../public/resume.json'
+import { ServerStyleSheet } from 'styled-components'
 
 const resume = result as any
-const styles = require('./client/style.css').toString()
+const sheet = new ServerStyleSheet()
+
+const html = renderToStaticMarkup(sheet.collectStyles(<App />))
+const styleTags = sheet.getStyleTags().replace('<style', '<style amp-custom')
 
 const Page = Layout({
     title: new Date().getFullYear() + ' 張瑀的個人履歷',
-    body: renderToStaticMarkup(<App />),
-    styles: styles,
+    body: html,
+    styles: styleTags,
     description: resume.basics.description,
 })
 
