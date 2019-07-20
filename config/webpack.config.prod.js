@@ -1,44 +1,44 @@
-const webpack = require('webpack');
-const path = require('path');
+const webpack = require('webpack')
+const path = require('path')
 
 module.exports = [
-  {
-    mode: 'production',
-    resolve: {
-      extensions: ['.ts', '.tsx', '.js', '.jsx']
-    },
-    entry: {
-      app: './src/app.tsx',
-    },
-    output: {
-      path: path.resolve(__dirname, '..', 'build'),
-      filename: '[name].js',
-      publicPath: '/'
-    },
-    target: 'node',
-    node: {
-      __dirname: false,
-      __filename: false,
-    },
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader?presets[]=env',
-          query: {
-              presets: ['env'],
-          },
+    {
+        mode: 'production',
+        resolve: {
+            extensions: ['.ts', '.tsx', '.js', '.jsx'],
         },
-        {
-          test: /\.tsx?$/,
-          loader: 'awesome-typescript-loader'
+        entry: {
+            ampify: './src/ampify.tsx',
         },
-        {
-          test: /\.css$/,
-          loaders: ['css-loader'],
+        output: {
+            path: path.resolve(__dirname, '..', 'build'),
+            filename: '[name].js',
+            publicPath: '/',
         },
-      ]
-    }
-  }
-];
+        target: 'node',
+        node: {
+            __dirname: false,
+            __filename: false,
+        },
+        module: {
+            rules: [
+                {
+                    test: /\.js$/,
+                    exclude: /node_modules/,
+                    loader: 'babel-loader?presets[]=env',
+                    query: {
+                        presets: ['env'],
+                    },
+                },
+                {
+                    test: /\.tsx?$/,
+                    loader: 'awesome-typescript-loader',
+                },
+                {
+                    test: /\.css$/,
+                    loaders: ['css-loader'],
+                },
+            ],
+        },
+    },
+]
