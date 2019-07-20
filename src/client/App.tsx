@@ -2,13 +2,6 @@ import * as React from 'react'
 import { hot } from 'react-hot-loader'
 import * as result from '../../public/resume.json'
 
-import emotionNormalize from 'emotion-normalize'
-import { injectGlobal } from 'emotion'
-
-injectGlobal`
-${emotionNormalize}
-`
-
 const resume = result as any
 
 import { Header, Aside, Main } from './components'
