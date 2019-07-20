@@ -2,7 +2,8 @@ const webpack = require('webpack')
 const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
-var nodeExternals = require('webpack-node-externals')
+const NodemonPlugin = require('nodemon-webpack-plugin')
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = [
     {
@@ -21,13 +22,6 @@ module.exports = [
             __filename: false,
         },
         externals: nodeExternals(),
-        // plugins: [
-        //   new webpack.DefinePlugin({
-        //     'process.env': {
-        //       NODE_ENV: `'production'`
-        //     }
-        //   })
-        // ],
         module: {
             rules: [
                 {
@@ -43,6 +37,12 @@ module.exports = [
         resolve: {
             extensions: ['.ts', '.tsx', '.js', '.jsx'],
         },
+        plugins: [
+            new NodemonPlugin({
+                script: resolve(__dirname, '..', 'build-dev', 'server.js'),
+                watch: resolve(__dirname, '..', 'build-dev', 'server.js'),
+            }),
+        ],
     },
     {
         mode: 'development',
