@@ -2,7 +2,7 @@ import * as React from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { Layout } from './client/components'
 import { App } from './client/App'
-import * as result from './resume.json'
+import * as result from '../public/resume.json'
 
 const resume = result as any
 const styles = require('./client/style.css').toString()
