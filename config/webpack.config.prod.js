@@ -23,14 +23,6 @@ module.exports = [
         module: {
             rules: [
                 {
-                    test: /\.js$/,
-                    exclude: /node_modules/,
-                    loader: 'babel-loader?presets[]=env',
-                    query: {
-                        presets: ['env'],
-                    },
-                },
-                {
                     test: /\.tsx?$/,
                     loader: 'awesome-typescript-loader',
                 },

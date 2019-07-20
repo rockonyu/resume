@@ -25,10 +25,6 @@ module.exports = [
         module: {
             rules: [
                 {
-                    test: /\.js$/,
-                    loader: 'babel-loader',
-                },
-                {
                     test: /\.tsx?$/,
                     loader: 'awesome-typescript-loader',
                 },
@@ -63,14 +59,6 @@ module.exports = [
         target: 'web',
         module: {
             rules: [
-                {
-                    test: /\.js$/,
-                    exclude: /node_modules/,
-                    loader: 'babel-loader?presets[]=env&presets[]=react',
-                    query: {
-                        presets: ['env', 'react'],
-                    },
-                },
                 {
                     test: /\.tsx?$/,
                     loader: 'awesome-typescript-loader',
