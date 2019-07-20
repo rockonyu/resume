@@ -1,9 +1,10 @@
-const webpack = require('webpack')
-const { resolve } = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
-const NodemonPlugin = require('nodemon-webpack-plugin')
-const nodeExternals = require('webpack-node-externals')
+/* eslint-disable @typescript-eslint/no-var-requires */
+const webpack = require('webpack');
+const { resolve } = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
+const NodemonPlugin = require('nodemon-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = [
     {
@@ -43,10 +44,7 @@ module.exports = [
     {
         mode: 'development',
         entry: {
-            main: [
-                `webpack-hot-middleware/client?reload=true`,
-                './src/client/index.tsx',
-            ],
+            main: [`webpack-hot-middleware/client?reload=true`, './src/client/index.tsx'],
             vendor: ['react', 'react-dom'],
         },
         output: {
@@ -71,13 +69,7 @@ module.exports = [
             new HtmlWebpackPlugin({
                 inject: true,
                 filename: 'index.html',
-                template: resolve(
-                    __dirname,
-                    '..',
-                    'src',
-                    'server',
-                    'template.ts'
-                ),
+                template: resolve(__dirname, '..', 'src', 'server', 'template.ts'),
                 //favicon: resolve(__dirname, '..', 'src', 'client', 'static', 'favicon.png'),
                 alwaysWriteToDisk: true,
             }),
@@ -108,4 +100,4 @@ module.exports = [
             modules: false,
         },
     },
-]
+];

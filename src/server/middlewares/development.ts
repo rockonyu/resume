@@ -1,10 +1,10 @@
-const webpack = require('webpack')
-const webpackDevMiddleware = require('webpack-dev-middleware')
-const webpackHotMiddleware = require('webpack-hot-middleware')
-const webpackConfig = require('../../../config/webpack.config.dev')
+import * as webpack from 'webpack';
+import * as webpackDevMiddleware from 'webpack-dev-middleware';
+import * as webpackHotMiddleware from 'webpack-hot-middleware';
+import * as webpackConfig from '../../../config/webpack.config.dev';
 
-module.exports = function setup(app) {
-    const compiler = webpack(webpackConfig[1])
+function setup(app) {
+    const compiler = webpack(webpackConfig[1]);
 
     app.use(
         webpackDevMiddleware(compiler, {
@@ -12,13 +12,15 @@ module.exports = function setup(app) {
             stats: {
                 colors: true,
             },
-        })
-    )
+        }),
+    );
 
-    app.use(webpackHotMiddleware(compiler))
+    app.use(webpackHotMiddleware(compiler));
 
     app.use(function(err, req, res, next) {
-        console.error(err.stack)
-        res.status(500).send('Something broke!')
-    })
+        console.error(err.stack);
+        res.status(500).send('Something broke!');
+    });
 }
+
+export default setup;

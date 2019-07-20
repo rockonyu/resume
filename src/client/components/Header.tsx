@@ -1,5 +1,5 @@
-import * as React from 'react'
-import styled from 'styled-components'
+import * as React from 'react';
+import styled from 'styled-components';
 
 const HeaderSection = styled.div`
     text-align: center;
@@ -7,13 +7,13 @@ const HeaderSection = styled.div`
     color: white;
     padding: 2em;
     height: 280px;
-`
+`;
 const Career = styled.p`
     font-size: 120%;
     font-weight: 900;
     padding: 1em;
     margin: 0;
-`
+`;
 const MyName = styled.h1`
     font-size: 3em;
     letter-spacing: 1em;
@@ -25,10 +25,10 @@ const MyName = styled.h1`
     @media (max-width: 767px) {
         padding: 0px 0.5em 1em 1.5em;
     }
-`
+`;
 const TitleSection = styled.h3`
     margin: 0.5em;
-`
+`;
 const Title = styled.span`
     padding: 0.5em;
     padding-left: 1.5em;
@@ -41,9 +41,9 @@ const Title = styled.span`
     @media (max-width: 767px) {
         letter-spacing: 0.5em;
     }
-`
+`;
 
-const Header = ({ name, label }) => (
+const Header: React.FunctionComponent<any> = ({ name, label }) => (
     <HeaderSection>
         <Career>WEB DEVELOPER</Career>
         <MyName>{name}</MyName>
@@ -51,6 +51,6 @@ const Header = ({ name, label }) => (
             <Title>{label}</Title>
         </TitleSection>
     </HeaderSection>
-)
+);
 
-export default Header
+export default Header;

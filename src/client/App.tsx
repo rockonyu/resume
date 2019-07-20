@@ -1,9 +1,9 @@
-import * as React from 'react'
-import { createGlobalStyle } from 'styled-components'
-import * as result from '../../public/resume.json'
-import { Header, Aside, Main } from './components'
+import * as React from 'react';
+import { createGlobalStyle } from 'styled-components';
+import * as result from '../../public/resume.json';
+import { Header, Aside, Main } from './components';
 
-const resume = result as any
+const resume = result as any;
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -18,9 +18,9 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         margin: 0;
     }
-`
+`;
 
-export const App = () => (
+export const App: React.FunctionComponent<any> = () => (
     <React.Fragment>
         <GlobalStyle />
         <Header name={resume.basics.name} label={resume.basics.label} />
@@ -44,6 +44,6 @@ export const App = () => (
             profiles={resume.basics.profiles}
         />
     </React.Fragment>
-)
+);
 
-export default App
+export default App;

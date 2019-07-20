@@ -1,4 +1,4 @@
-const Layout = ({ title, body, description, styles }) => `
+const Layout: (any) => string = ({ title, body, description, styles }) => `
   <!doctype html>
   <html ⚡>
     <head>
@@ -21,6 +21,6 @@ const Layout = ({ title, body, description, styles }) => `
       <div id="app">${body}</div>
     </body>
   </html>
-`
+`;
 
-export default Layout
+export default Layout;
