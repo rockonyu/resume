@@ -1,12 +1,10 @@
-import Layout from '../client/components/Layout';
+import Layout from '../client/components/Layout'
 
 // TODO: 將 Layout 也改成 React component
-const html =  Layout(
-  {
+const html = Layout({
     title: 'Local DEV',
     body: '',
-    styles: ''
-  }
-);
+    styles: '',
+})
 
-module.exports = html;
+module.exports = html
