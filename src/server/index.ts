@@ -1,10 +1,10 @@
-import path from 'path'
+import * as path from 'path'
 
 const http = require('http')
 const express = require('express')
 
 // process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-process.env.HTTP_PORT = process.env.HTTP_PORT || 3000
+process.env.HTTP_PORT = process.env.HTTP_PORT || '3000'
 
 const app = express()
 

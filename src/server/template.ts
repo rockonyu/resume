@@ -4,6 +4,7 @@ import Layout from '../client/components/Layout'
 const html = Layout({
     title: 'Local DEV',
     body: '',
+    description: '',
     styles: '',
 })
 
