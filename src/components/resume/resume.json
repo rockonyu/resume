@@ -1,0 +1,320 @@
+{
+  "basics": {
+    "title": "2020 張瑀的個人履歷",
+    "name": "張　瑀",
+    "enname": "Austin",
+    "label": "Software Engineer",
+    "picture": "http://graph.facebook.com/1358756972/picture?type=large",
+    "email": "drivers_high1937@hotmail.com",
+    "linkedin": "https://www.linkedin.com/in/austin119",
+    "website": "https://rockonyu.github.io",
+    "birthday": "1988-08-26",
+    "description": "Austin 是專注網際網路的軟體工作者，使用不同技術總計約六年的網頁開發經驗，作為前端工程師則透過 React、TypeScript、AngularJS 等技術開發，在專案期限內協助數個客戶網站順利上線。職業生涯與許多專業工作者合作，其認真面對工作的態度均獲得正面回饋。此外也對技術發展保持開放態度，持續審視當前職涯並持續學習，希望與有才華的同事互相技術交流與實際應用在商用產品。",
+    "profiles": [
+      {
+        "network": "Facebook",
+        "username": "張瑀",
+        "url": "https://www.facebook.com/profile.php?id=1358756972"
+      },
+      {
+        "network": "Linkedin",
+        "username": "張瑀",
+        "url": "https://www.linkedin.com/in/austin119/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "大心數位 / 多奇數位股份有限公司",
+      "position": "網頁程式設計師",
+      "website": "http://www.infbeyond.com/",
+      "year": "至今",
+      "startDate": "2014",
+      "endDate": "至今",
+      "extraInfo": true,
+      "summary": "負責需求訪談、系統規劃與專案主功能實作 (包跨資料庫設計、後端與前端 JavaScript)，使用 ASP.NET MVC 或 ASP.NET Web API & Angular 進行專案開發。",
+      "highlights": []
+    },
+    {
+      "company": "日月光半導體資訊部",
+      "position": "SAP 資訊工程師",
+      "website": "http://www.aseglobal.com/ch/",
+      "year": "2014",
+      "startDate": "2012",
+      "endDate": "2014",
+      "summary": "負責維護 SAP 財務模組與協助財務部門進行資產盤點、折舊與結帳作業，使用 ABAP 與 C# 語言進行開發。",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "逢甲大學",
+      "area": "",
+      "studyType": "資訊工程學系",
+      "startDate": "2006",
+      "endDate": "2010",
+      "gpa": "",
+      "summary": "副修網際網路學程，畢業專題是 JAVA 車牌辨識系統。",
+      "courses": []
+    }
+  ],
+  "training": [
+    {
+      "institution": "酷奇教育訓練 & SKILLTREE",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "至今",
+      "gpa": "",
+      "summary": "",
+      "courses": [
+        "2014-08-16 前端工程訓練：JavaScript 與 TypeScript 開發實戰",
+        "2014-08-17 AngularJS 開發實戰：新手入門篇",
+        "2015-05-31 Entity Framework 6 開發實戰",
+        "2015-08-30 AngularJS 開發實戰：模組開發篇",
+        "2015-10-25 前端工程訓練：npm, bower, yo, gulp, webpack 應用實戰",
+        "2015-12-26 JavaScript 開發實戰：核心概念篇",
+        "2016-04-24 Visual Studio 2015 開發與偵錯技巧",
+        "2016-05-29 JavaScript 開發實戰：核心概念篇",
+        "2016-08-13 Angular2 開發實戰：新手入門",
+        "2016-09-03 ASP.NET Web API 2 開發實戰",
+        "2017-03-26 ASP.NET MVC 5 開發實戰：從入門到進階",
+        "2017-06-10 物件導向實作課程 (使用 C#)"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "電影蛋糕",
+      "owner": "MOMA 摩瑪科技",
+      "releaseDate": "2017",
+      "fromDate": "2014",
+      "website": "http://www.moviecaker.com/",
+      "summary": "",
+      "highlights": [
+        "前端使用 Vue.js 與 Angular2 (子網站)",
+        "使用快取增加頁面載入速度",
+        "可以使用 Oauth2 的 Bear token 授權用戶",
+        "使用無限滾動載入的資料，可以在頁面轉換之間保存",
+        "支援微信與微信公眾號的第三方登入",
+        "重構大量程式碼並加入單元測試以保持可用性",
+        "電影海報可等比例縮放，支援多種不同尺寸的海報"
+      ]
+    },
+    {
+      "name": "高雄市線上即時服務系統",
+      "owner": "雙葉電子",
+      "releaseDate": "2016",
+      "website": "https://soweb.kcg.gov.tw/RWD/",
+      "summary": "",
+      "highlights": [
+        "使用 Angular2 建立的 SPA 網站",
+        "使用 Hash Location Strategy 進行前端路由",
+        "透過 Http Service 取得後端 Web API 資源"
+      ]
+    },
+    {
+      "name": "台灣愛惠浦",
+      "owner": "3W Creative 三角創意",
+      "releaseDate": "2017",
+      "fromDate": "2015",
+      "website": "http://www.everpure.tw/",
+      "summary": "",
+      "highlights": [
+        "前台購物車介面使用 AngularJS",
+        "購物車網站串接紅陽金流與日翊物流",
+        "透過 T4 樣板產生客製的 CRUD 頁面",
+        "後台報表可以匯出 CSV",
+        "使用 Entity Framework Code-First 模式開發",
+        "會員系統使用 identity 2.x"
+      ]
+    },
+    {
+      "name": "好室配",
+      "owner": "3W Creative 三角創意",
+      "releaseDate": "2014",
+      "website": "https://www.housepal.tw/",
+      "summary": "",
+      "highlights": [
+        "使用 Entity Framework DB-First 模式開發",
+        "使用 ASP.Net MVC4 與 SimpleMemberShip 會員系統"
+      ]
+    },
+    {
+      "name": "PDA 資產盤點系統",
+      "owner": "",
+      "releaseDate": "2013",
+      "website": "javascript:void(0)",
+      "summary": "",
+      "highlights": ["Win CE & WinForm", "使用 PDA 掃描資產條碼進行盤點作業"]
+    },
+    {
+      "name": "固定資產查詢系統",
+      "owner": "",
+      "releaseDate": "2012",
+      "website": "javascript:void(0)",
+      "summary": "",
+      "highlights": [
+        "WebForm 與 Oracle DB 資料存取",
+        "使用 ADO.Net 進行資料庫存取"
+      ]
+    }
+  ],
+  "skills": [
+    "TypeScript",
+    "React",
+    "Redux",
+    "Node.js",
+    "CSS",
+    "Angular JS",
+    "C#",
+    "ASP.Net"
+  ],
+  "techs": [
+    {
+      "label": "Backend",
+      "names": [
+        "ASP.Net MVC",
+        "ASP.Net Web API",
+        "Entity Framework",
+        "LINQ",
+        "C#",
+        "SQL Server",
+        "IIS 7.5",
+        "ASP.Net WebForm"
+      ]
+    },
+    {
+      "label": "Frontend",
+      "names": [
+        "Angular2",
+        "Angular-CLI",
+        "Vue.js",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Browsersync",
+        "Bootstrap",
+        "Semantic-UI",
+        "AngularJS",
+        "jQuery"
+      ]
+    },
+    {
+      "label": "Tools & Testing",
+      "names": [
+        "Git",
+        "Visual Studio 2017",
+        "Visual Studio Code",
+        "NPM",
+        "docker",
+        "Postman",
+        "Selenium",
+        "xUnit"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "中文",
+      "level": "精通"
+    },
+    {
+      "name": "英文",
+      "level": "可以閱讀長篇文件"
+    }
+  ],
+  "interests": [
+    {
+      "name": "",
+      "keywords": [
+        "ASP.NET Core",
+        "TDD 測試導向開發",
+        "Angular2",
+        "同構 JavaScript 應用程式"
+      ]
+    }
+  ],
+  "milestone": [
+    {
+      "name": "91APP",
+      "title": "前端工程師",
+      "to": "Now",
+      "from": "2017",
+      "highlights": [
+        "全聯線上購的客製商業邏輯，例如用戶最愛門市與訂單指定到貨日。",
+        "提供商家輸入多語系的選單，並允許用戶在前台切換幣別與語系，上線後提升店家業績成長 30%。",
+        "使用 React、Redux 開發店家首頁的所見即所得編輯器，並使用 K8S 維運及部署站台。",
+        "雙 11、春節與連假期間透過 AWS 與 Cloudwatch 值班監控服務流量與排除系統異常。",
+        "協助 91APP Lite 服務於馬來西亞開站，串接當地的金物流與實作系統多語系。"
+      ],
+      "projects": [
+        {
+          "name": "全聯線上購",
+          "href": "https://shop.pxmart.com.tw"
+        },
+        {
+          "name": "婕洛妮絲 (多語系切換)",
+          "href": "https://www.jsstore.com.tw"
+        }
+      ]
+    },
+    {
+      "name": "多奇數位",
+      "title": "ASP.Net MVC 網站工程師",
+      "to": "2017",
+      "from": "2014",
+      "highlights": [
+        "依客戶需求使用對應框架進行開發，為主要工程師並參與系統規劃及資料庫設計等。",
+        "台灣愛惠浦購物網站建置，使用 Identity 2.0 會員機制與 AngularJS 並串接金物流。",
+        "使用 Angular2 開發地方政府的線上即時服務網站。",
+        "電影蛋糕網站改版與日常維運，參考文件建立 OAuth 授權機制與串接微信登入。",
+        "使用 ASP.Net MVC 與 SQL Server 建置好室配購物網站後台與資料庫結構規劃。"
+      ],
+      "projects": [
+        {
+          "name": "台灣愛惠浦",
+          "href": "https://www.everbrightpurifying.com"
+        },
+        {
+          "name": "高雄市政府線上即時服務",
+          "href": "https://soweb.kcg.gov.tw"
+        },
+        {
+          "name": "電影蛋糕",
+          "href": "http://www.moviecaker.com"
+        },
+        {
+          "name": "好室配線上購物",
+          "href": "https://www.housepal.tw"
+        }
+      ]
+    },
+    {
+      "name": "日月光半導體資訊部",
+      "title": "SAP 資訊工程師",
+      "to": "2014",
+      "from": "2012",
+      "highlights": [
+        "負責開發 SAP 財務模組與協助財務部門進行資產盤點、折舊與結帳作業。",
+        "開發固定資產盤點程式 (PDA) 與查詢介面，協助 QA 部門進行控管品質檢驗流程。"
+      ],
+      "projects": []
+    },
+    {
+      "name": "逢甲大學",
+      "title": "資訊工程學系",
+      "to": "2010",
+      "from": "",
+      "highlights": ["專題：使用 JAVA 與 Webcam 辨識六碼機車牌照。"],
+      "projects": []
+    }
+  ],
+  "recommended": [
+    {
+      "name": "ilandy",
+      "position": "大心數位 - 前端工程師",
+      "summary": "Austin 是我見過最重視使用者體驗的後端工程師"
+    }
+  ]
+}
