@@ -1,5 +1,7 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import { Link } from "gatsby"
-import React, { FC } from "react"
+import { FC } from "react"
 
 type Props = {
   siteTitle: string
@@ -7,19 +9,19 @@ type Props = {
 
 const Header: FC<Props> = ({ siteTitle }) => (
   <header
-    style={{
+    sx={{
       background: `#2f393b`,
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
+    <section
+      sx={{
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 sx={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -30,7 +32,7 @@ const Header: FC<Props> = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
+    </section>
   </header>
 )
 

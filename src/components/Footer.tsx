@@ -1,33 +1,33 @@
-import React, { FC } from "react"
-import styled from "@emotion/styled"
-import { space, maxWidth, color } from "styled-system"
-
-const Section = styled.footer`
-  ${color}
-  ${space}
-  ${maxWidth}
-`
-
-const Container = styled.div`
-  ${maxWidth}
-  ${space}
-`
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+import { FC, Fragment } from "react"
 
 const Footer: FC = ({ children }) => (
-  <Section backgroundColor="#ececec" py={4}>
-    <Container maxWidth={960} m="0 auto" p="0 1em">
+  <footer
+    sx={{
+      backgroundColor: "#ececec",
+      py: 4,
+    }}
+  >
+    <section
+      sx={{
+        maxWidth: 960,
+        margin: "0 auto",
+        padding: "0 1em",
+      }}
+    >
       {children ? (
         children
       ) : (
-        <>
+        <Fragment>
           © {new Date().getFullYear()}, Written by {` `}
           <a href="/resume">Austin Chang</a> and built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </>
+        </Fragment>
       )}
-    </Container>
-  </Section>
+    </section>
+  </footer>
 )
 
 export default Footer
