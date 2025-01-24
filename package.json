@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/rockonyu/resume#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.14"
+    "browser-sync": "^3.0.3"
   }
 }
